@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head><title>
+    Performance Results PRs
+</title><link type="image/x-icon" rel="shortcut icon" href="/W_Theme_UI/img/favicon.png" /><link rel="apple-touch-icon" href="apple-touch-icon.png" /><script type="text/javascript" src="/W_Theme_UI/js/libs/modernizr-2.5.3.min.js"></script><script type="text/javascript" src="/W_Theme_UI/js/pusher.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" />
+<style>
+.OSFillParent { 
+ display: block;
+ width: 100%;
+}
+table.OSFillParent {
+ display: table;
+}
+input.OSFillParent,
+button.OSFillParent,
+select.OSFillParent,
+textarea.OSFillParent {
+ display: inline-block;
+ box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+}
+.OSInline {
+ display: inline-block;
+ *zoom: 1;
+ *display: inline;
+ vertical-align: top;
+}
+table.OSInline {
+ display: inline-table;
+}
+.OSAutoMarginTop {
+ margin-top: 10px;
+}
+table[class*="ThemeGrid_Width"] {
+ display: inline-table;
+ vertical-align: top;
+}
+div[class*="ThemeGrid_Width"] {
+ vertical-align: top;
+}
+th[class*="ThemeGrid_Width"],
+td[class*="ThemeGrid_Width"] {
+ display: table-cell;
+}
+[class*="ThemeGrid_Width"] {
+ display: inline-block;
+ box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ *zoom: 1;
+ *display: inline;
+}
+.ThemeGrid_Container {
+ box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+}
+
+</style>
+<link href="/RichWidgets/Blocks/RichWidgets/jQueryUI/jQueryUIInternal.css?5922" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets_Override/Blocks/RichWidgets_Override/jQueryUI/jQueryUIInternal.css?6260" type="text/css" rel="stylesheet" />
+<link href="/W_Theme_UI/Blocks/W_Theme_UI/CommonWidgets/LoginInfo.css?6392" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/RichWidgets/Feedback_AjaxWait.css?5922" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/RichWidgets/Feedback_Message.css?5922" type="text/css" rel="stylesheet" />
+<link href="/W_Theme_UI/Blocks/W_Theme_UI/MenuFlow/AthleteMenu.css?6392" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets_Override/Blocks/RichWidgets_Override/Override_Wodify/jQueryInputCalendar.css?6260" type="text/css" rel="stylesheet" />
+<link href="/W_Utils_UI/Blocks/W_Utils_UI/CommonWidgets/FilterBlock.css?6312" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/RichWidgets/List_Counter.css?5922" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/RichWidgets/List_SortColumn.css?5922" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/RichWidgets/List_Navigation.css?5922" type="text/css" rel="stylesheet" />
+    <link href="/W_Theme_UI/Theme.W_Theme_UI.css?6392" type="text/css" rel="stylesheet" />
+    <script id="_OSrequestInfoScript" type="text/javascript">(function(global) { global.outsystems = global.outsystems || {};global.outsystems.internal = global.outsystems.internal || {};global.outsystems.internal.requestInfo = {requestKey:'2392d559-db7f-42aa-a6a3-13913fa8ef59',visitorKey:'965abde2-9b7c-488c-9d0e-d21703305887',visitKey:'ccdc6564-f46a-47b0-bdea-c7744275b879',sessionKey:'20881815-dd20-45b8-850a-0c9537d85601',userKey:'e86ac89f-64b4-29cb-1e1a-f62665d4bf86',environmentKey:'fd58fcf1-9175-4093-be99-4e5bf0482df7',applicationKey:'a0b6936f-8b0f-4861-83af-93014a892812',applicationName:'Wodify',espaceKey:'93920691-ec7c-4fa6-bfbe-ca6e1d1c29cc',espaceName:'Performance',webScreenKey:'b81920bd-bb57-4a18-abec-2710d2b0a562',webScreenName:'MyPerformance_PerformanceResultsPRs',tenantKey:'6c130e2b-8c24-96af-8ac1-a6b22b1e6eae',tenantName:'BigCityCrossFit',frontendKey:'OlA0lvWtEAbb'}})(this);</script>
+    <script src="_osjs.js?9_0_1_35" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets_Override/jQueryUI/jQueryUIInternal.js?6260" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets_Override/jQueryUI/jQueryComponents.js?6260" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets_Override/jQueryUI/jQueryCookie.js?6260" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets_Override/jQueryUI/jQueryCurvycorners.js?6260" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets_Override/Override_Wodify/Popup_InfoBalloon.js?6260" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets/RichWidgets/Feedback_AjaxWait.en.js?5922" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets/jQueryUI/jQueryUIInternal.en.js?5922" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets/jQueryUI/jQueryComponents.en.js?5922" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets/RichWidgets/Feedback_Message.en.js?5922" type="text/javascript" charset="UTF-8"></script>
+    <script src="/Performance/Blocks/RichWidgets/RichWidgets/List_SortColumn.en.js?5922" type="text/javascript" charset="UTF-8"></script>
+
+</head>
+  <body>
+    <form method="post" action="MyPerformance_PerformanceResultsPRs.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="WebForm1" name="WebForm1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__OSVSTATE" id="__OSVSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['WebForm1'];
+if (!theForm) {
+    theForm = document.WebForm1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+OsPrepareCheckboxesForSubmit();
+OsFixUploadBeforeSubmit();
+if (!OsValidatorOnSubmit()) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3EF09C61" />
+</div>
+<div  id="W_Theme_UI_wt50_block_wtHeader" class="Header container clearfix noprint"><div  align="right"></div ><div  class="ul-login noprint"><div  class="li-markup"><img alt="" src="/W_Theme_UI/img/Wodify_Logo_Small.png?6392" style="height:28px;width:122px;" /></div ><div  class="li-markup avatar"><img alt="" src="https://res.cloudinary.com/wodify/image/upload/a_exif,c_fill,h_24,q_80,w_24,x_0,y_0/v1/upload/profile/6dde3ab3-606e-4760-858c-cd76838acc30.jpg" style="height:24px;width:24px;" /></div ><div  class="li-markup" style="display:none"><select name="W_Theme_UI_wt50$block$wt6$wtApplications" id="W_Theme_UI_wt50_block_wt6_wtApplications" tabindex="-1" tabindexalwaysoff="true" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wt6_wtApplications&#39;,&#39;W_Theme_UI_wt50$block$wt6$wtApplications&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option selected="selected" value="1">Wodify</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wt6_wtApplications"></span></div ><div  class="li-markup p">Chelsea</div ><div  class="li-markup"><a id="W_Theme_UI_wt50_block_wt6_wtFeedback" tabindex="5" title="Give your Box Feedback" alt="Give your Box Feedback" href="https://app.wodify.com/W_Theme_UI/FeedbackPopup.aspx?LinkId=W_Theme_UI_wt50_block_wt6_wtFeedback" style="text-decoration: none !important; font-size: 30px !important; color: #444 !important;"><span class="iconfont"></span></a><span class="Text_Note"><script type='text/javascript'>
+      RichWidgets_Popup_InfoBalloon_init('W_Theme_UI_wt50_block_wt6_wtFeedback',-1,-1,'https://app.wodify.com/Performance/MyPerformance_PerformanceResultsPRs.aspx', 'True', 'True');
+ </script></span></div ><div  class="li-markup"><div  id="W_Theme_UI_wt50_block_wt6_wtNotificationWrapper" class="notification_circle_inactive"><div  class="notification_text"><a id="W_Theme_UI_wt50_block_wt6_wtNotificationsLink" tabindex="6" href="/Social/WebNotificationsPopupEntry.aspx?UserId=507645"><span id="W_Theme_UI_wt50_block_wt6_wtNumNotifications">0</span></a><span class="Text_Note"><script type='text/javascript'>
+      RichWidgets_Popup_InfoBalloon_init('W_Theme_UI_wt50_block_wt6_wtNotificationsLink',500,475,'https://app.wodify.com/Performance/MyPerformance_PerformanceResultsPRs.aspx', 'True', 'True');
+ </script></span></div ></div ><script type='text/javascript'>
+    var pusher = new Pusher('50b005141ce6da42592f', { encrypted: true });
+    var channel = pusher.subscribe('notification_badge_507645');
+    channel.bind('notification_badge_update', function(data) {
+        $('#W_Theme_UI_wt50_block_wt6_wtNumNotifications').text(data.message);
+        if(data.message == '0') {
+            $('#W_Theme_UI_wt50_block_wt6_wtNotificationWrapper').removeClass('notification_circle_active').addClass('notification_circle_inactive');
+        } else {
+            $('#W_Theme_UI_wt50_block_wt6_wtNotificationWrapper').removeClass('notification_circle_inactive').addClass('notification_circle_active');
+        }
+    });
+</script></div ><div  class="li-markup p"><a id="W_Theme_UI_wt50_block_wt6_wt26" tabindex="7" href="/Membership/MyInfoEntry.aspx">My Profile</a></div ><div  class="li-markup p"><a id="W_Theme_UI_wt50_block_wt6_wtLogoutLink" tabindex="8" href="javascript:__doPostBack(&#39;W_Theme_UI_wt50$block$wt6$wtLogoutLink&#39;,&#39;&#39;)">Logout</a></div ><div  class="li-markup p" style="display:none"><a id="W_Theme_UI_wt50_block_wt6_wt15" tabindex="10" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wt6_wt15&#39;,&#39;W_Theme_UI_wt50$block$wt6$wt15&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" href="#"><img alt="" title="Click to Enter Kiosk Mode" src="/W_Theme_UI/img/kiosk.png?6392" style="height:18px;width:18px;" /></a></div ></div ><img alt="" src="/W_Theme_UI/_image.aspx/Hkc1k_qpKVmN26LDswH6IHlDzDqwQA==/1526175_188359291355850_1255259043_n.jpg" /></div ><div  id="W_Theme_UI_wt50_block_wtMenu" class="noprint"><div  class="Menu_Container container clearfix"><div  class="Menu_TopMenus"><div  class="Menu_TopMenu"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt41" tabindex="11" href="/WOD/WODEntry.aspx">WOD</a></div ><div  class="Menu_TopMenu"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt1" tabindex="12" href="/Schedule/CalendarListViewEntry.aspx">Calendar</a></div ><div  class="Menu_TopMenu"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt11" tabindex="13" href="/Coachboard/CoachboardEntry.aspx">Coachboard</a></div ><div  class="Menu_TopMenu"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt7" tabindex="14" href="/Performance/WhiteboardEntry.aspx">Whiteboard</a></div ><div  class="Menu_TopMenu"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt22" tabindex="15" href="/Performance/LeaderboardShowEntry.aspx">Leaderboards</a></div ><div  class="Menu_TopMenu" style="display:none"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt17" tabindex="16" href="/Performance/AthletePerformanceCardEntry.aspx">Athlete Performance</a></div ><div  class="Menu_TopMenu Menu_TopMenuActive"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt13" tabindex="17" href="/Performance/MyPerformanceCardEntry.aspx">My Performance</a></div ><div  class="Menu_TopMenu"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt32" tabindex="18" href="/Journal/NutritionJournalReviewEntry.aspx">My Reviews</a></div ><div  class="Menu_TopMenu"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt21" tabindex="19" href="/Journal/NutritionJournalEntry.aspx">My Journal</a></div ><div  class="Menu_TopMenu"><a id="W_Theme_UI_wt50_block_wtMenu_W_Theme_UI_wt61_block_wt20" tabindex="20" href="/Exercises/ExerciseListEntry.aspx">Video Library</a></div ></div ></div ></div ><div  id="W_Theme_UI_wt50_block_wtMainContainer" class="container clearfix"><div  id="W_Theme_UI_wt50_block_wtSideBarContainer" class="sidebar noprint"><div  id="W_Theme_UI_wt50_block_wtSidebar" class="side_container"><div  id="W_Theme_UI_wt50_block_wtSubNavigation" class="Sidebar_BlockActions"><a id="W_Theme_UI_wt50_block_wtSubNavigation_wt35_wt10" tabindex="21" href="MyPerformance_PerformanceCard.aspx">Performance Card</a><a id="W_Theme_UI_wt50_block_wtSubNavigation_wt35_wt1" tabindex="22" href="MyPerformance_Gymnastics.aspx">Gymnastics</a><a id="W_Theme_UI_wt50_block_wtSubNavigation_wt35_wt12" tabindex="23" href="MyPerformance_Weightlifting.aspx">Weightlifting</a><a id="W_Theme_UI_wt50_block_wtSubNavigation_wt35_wt8" tabindex="24" href="MyPerformance_Metcon.aspx">Metcons</a><a id="W_Theme_UI_wt50_block_wtSubNavigation_wt35_wt6" tabindex="25" href="MyPerformance_WeightliftingTotal.aspx">Weightlifting Totals</a><a id="W_Theme_UI_wt50_block_wtSubNavigation_wt35_wt2" tabindex="26" class="active" href="MyPerformance_PerformanceResultsPRs.aspx">My PRs</a><a id="W_Theme_UI_wt50_block_wtSubNavigation_wt35_wt14" tabindex="27" href="MyPerformance_Add.aspx">Add Performance</a></div ><br/><div  id="W_Theme_UI_wt50_block_wtActions"></div ></div ></div ><div  id="W_Theme_UI_wt50_block_wtMain" class="main"><div  id="W_Theme_UI_wt50_block_wtTitle" class="h1">Performance Results: PRs</div ><div  id="W_Theme_UI_wt50_block_wtMainContent" class="MainContent"><div  id="W_Theme_UI_wt50_block_wtMainContent_wtFilters_Wrapper" class="filter"><div  class="filter_Wrapper"><div ><input onclick="if (OsPage_ClientValidate(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnReset&#39;)) OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnReset&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtbtnReset&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" type="submit" name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtbtnReset" value="Reset" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnReset" tabindex="30" class="Button" /></div ><div  style="display:none"><span class="fieldLabel">Location:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbLocation" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbLocation" tabindex="31" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbLocation&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbLocation&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+    <option value="758">Big City CrossFit</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbLocation"></span></div ><div ><span class="fieldLabel">Program:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbPrograms2" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPrograms2" tabindex="32" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPrograms2&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbPrograms2&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+    <option value="4465">2014 Granite Games</option>
+    <option value="2932">CrossFit</option>
+    <option value="3263">Open Gym</option>
+    <option value="3410">S WOD</option>
+    <option value="3264">Team WOD</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPrograms2"></span></div ><div ><span class="fieldLabel">Date:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbDateRange" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbDateRange" tabindex="33" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbDateRange&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbDateRange&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="18">All Time</option>
+    <option value="31">Custom</option>
+    <option value="19">Yesterday</option>
+    <option value="11">Today</option>
+    <option value="3">This Year</option>
+    <option value="1">Last Year</option>
+    <option value="12">This Month</option>
+    <option value="10">Last Month</option>
+    <option selected="selected" value="22">This Week</option>
+    <option value="23">Last Week</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbDateRange"></span></div ><div  style="display:none"><span class="fieldLabel">From:</span><input name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbFromDate" type="text" value="12/28/2015" maxlength="50" size="10" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate" tabindex="34" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onoschange="OsAjaxDelayed(null,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbFromDate&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,osOnChangeTimerDelay);" onchange="OsAjaxDelayed(null,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbFromDate&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,0);" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate"></span><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js">
+</script><script type='text/javascript'>
+    $(function() {
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').prop('style').cssText = $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').prop('style').cssText;
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').prop('size', $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').prop('size'));
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').prop('maxlength', $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').prop('maxlength'));
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').prop('class', $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').prop('class'));
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').removeClass('Mandatory');
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').hide();
+        if( $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').css('display') == 'none' ) {
+            $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').css('display', '');
+        }
+        
+        
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').val($.datepicker.formatDate('mm/dd/yy',$.datepicker.parseDate('mm/dd/yy', $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').val())));
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').datepicker({
+            dateFormat: 'mm/dd/yy',
+            altField: '#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate',
+            altFormat: 'mm/dd/yy'
+        });
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').change(function() {
+            if( $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput').val() == '') {
+                $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').val('');
+            }
+            $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate').change();
+        });
+    });
+</script><input name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$RichWidgets_Override_wt27$block$wtDateInput" type="text" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput" tabindex="35" placeholder="MM/DD/YYYY" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput"></span><script type="text/javascript">
+//<![CDATA[
+OsInputPrompt_Bootstrap('W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput');
+//]]>
+</script><span class="fieldLabel">To:</span><input name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbToDate" type="text" value="01/03/2016" maxlength="50" size="10" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate" tabindex="36" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onoschange="OsAjaxDelayed(null,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbToDate&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,osOnChangeTimerDelay);" onchange="OsAjaxDelayed(null,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbToDate&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,0);" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate"></span><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js">
+</script><script type='text/javascript'>
+    $(function() {
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').prop('style').cssText = $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').prop('style').cssText;
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').prop('size', $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').prop('size'));
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').prop('maxlength', $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').prop('maxlength'));
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').prop('class', $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').prop('class'));
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').removeClass('Mandatory');
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').hide();
+        if( $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').css('display') == 'none' ) {
+            $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').css('display', '');
+        }
+        
+        
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').val($.datepicker.formatDate('mm/dd/yy',$.datepicker.parseDate('mm/dd/yy', $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').val())));
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').datepicker({
+            dateFormat: 'mm/dd/yy',
+            altField: '#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate',
+            altFormat: 'mm/dd/yy'
+        });
+        $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').change(function() {
+            if( $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput').val() == '') {
+                $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').val('');
+            }
+            $('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate').change();
+        });
+    });
+</script><input name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$RichWidgets_Override_wt61$block$wtDateInput" type="text" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput" tabindex="37" placeholder="MM/DD/YYYY" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput"></span><script type="text/javascript">
+//<![CDATA[
+OsInputPrompt_Bootstrap('W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput');
+//]]>
+</script></div ><div  style="display:none"><span class="fieldLabel">Class:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbClass" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbClass" tabindex="38" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbClass&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbClass&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbClass"></span></div ><div  style="display:none"><span class="fieldLabel">Chart By:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbResolution" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbResolution" tabindex="39" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbResolution&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbResolution&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbResolution"></span></div ><div  style="display:none"><span class="fieldLabel">Attendance Type:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbAttendanceType" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceType" tabindex="40" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceType&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbAttendanceType&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+    <option value="1">Unlimited</option>
+    <option value="2">Limited</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceType"></span></div ><div  style="display:none"><span class="fieldLabel">Membership Type:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbMembershipType" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipType" tabindex="41" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipType&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbMembershipType&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+    <option value="2">Plan</option>
+    <option value="1">Sessions</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipType"></span></div ><div  style="display:none"><span class="fieldLabel">Membership Plan:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbMembershipPlan" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipPlan" tabindex="42" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipPlan&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbMembershipPlan&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipPlan"></span></div ><div  style="display:none"><span class="fieldLabel">Status:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbGenericStatus" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericStatus" tabindex="43" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericStatus&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbGenericStatus&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericStatus"></span></div ><div  style="display:none"><span class="fieldLabel">Status:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbGenericStatus2" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericStatus2" tabindex="44" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericStatus2&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbGenericStatus2&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericStatus2"></span></div ><div  style="display:none"><span class="fieldLabel">Payment Plan:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbPaymentPlan" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPaymentPlan" tabindex="45" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPaymentPlan&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbPaymentPlan&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPaymentPlan"></span></div ><div ><span class="fieldLabel">Component Type:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbComponentType" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbComponentType" tabindex="46" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbComponentType&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbComponentType&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+    <option value="3">Warm-up</option>
+    <option value="1">Gymnastics</option>
+    <option value="5">Weightlifting</option>
+    <option value="2">Metcon</option>
+    <option value="4">Weightlifting Total</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbComponentType"></span></div ><div  style="display:none"><span class="fieldLabel">Status:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbStatus" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbStatus" tabindex="47" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbStatus&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbStatus&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbStatus"></span></div ><div  style="display:none"><span class="fieldLabel">Transaction Type:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbTransactionType" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbTransactionType" tabindex="48" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbTransactionType&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbTransactionType&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbTransactionType"></span></div ><div  style="display:none"><span class="fieldLabel">Trend:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbTrend" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbTrend" tabindex="49" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbTrend&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbTrend&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="4">All</option>
+    <option value="1">New Athlete</option>
+    <option value="2">No Attendance</option>
+    <option value="3">Up</option>
+    <option value="5">Down</option>
+    <option value="6">No Change</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbTrend"></span></div ><div  style="display:none"><span class="fieldLabel">Component:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbComponent" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbComponent" tabindex="50" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbComponent&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbComponent&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbComponent"></span></div ><div  style="display:none"><span class="fieldLabel">Average Weekly Attendance Less Than:</span><input name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbAttendanceLessThan" type="text" maxlength="5" size="1" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceLessThan" tabindex="51" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onoschange="OsAjaxDelayed(null,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceLessThan&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbAttendanceLessThan&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,osOnChangeTimerDelay);" onchange="OsAjaxDelayed(null,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceLessThan&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbAttendanceLessThan&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,0);" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceLessThan"></span></div ><div  style="display:none"><span class="fieldLabel">Payment Type:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbMembershipType2" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipType2" tabindex="52" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipType2&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbMembershipType2&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipType2"></span></div ><div  style="display:none"><span class="fieldLabel"></span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbPicklistValue" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPicklistValue" tabindex="53" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPicklistValue&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbPicklistValue&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPicklistValue"></span></div ><div  style="display:none"><span class="fieldLabel">Pay Period</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbPayrollPayPeriodValue" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPayrollPayPeriodValue" tabindex="54" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPayrollPayPeriodValue&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbPayrollPayPeriodValue&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPayrollPayPeriodValue"></span></div ><div  style="display:none"><span class="fieldLabel">Status:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbClassReservationStatus" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbClassReservationStatus" tabindex="55" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbClassReservationStatus&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbClassReservationStatus&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbClassReservationStatus"></span></div ><div  style="display:none"><span class="fieldLabel">Discount:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbDiscount" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbDiscount" tabindex="56" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbDiscount&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbDiscount&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbDiscount"></span></div ><div  style="display:none"><span class="fieldLabel"></span><div  class="checkbox" style="margin-right: 10px;"><input type="checkbox" name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbBoolean1" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbBoolean1" tabindex="57" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbBoolean1&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbBoolean1&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbBoolean1"></span></div ></div ><div  style="display:none"><span class="fieldLabel"></span><div  class="checkbox" style="margin-right: 10px;"><input type="checkbox" name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbBoolean2" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbBoolean2" tabindex="58" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbBoolean2&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbBoolean2&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbBoolean2"></span></div ></div ><div  style="display:none"><span id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtUser" class="fieldLabel"></span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbUserValue" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbUserValue" tabindex="59" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbUserValue&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbUserValue&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbUserValue"></span></div ><div  style="display:none"><span class="fieldLabel">Status:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbGenericKeyValue3" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericKeyValue3" tabindex="60" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericKeyValue3&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbGenericKeyValue3&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericKeyValue3"></span></div ><div  style="display:none"><span class="fieldLabel">Service:</span><select name="W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbService" id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbService" tabindex="61" class="chzn-select" onkeydown="return OsEnterKey(&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnSearch&#39;, arguments[0] || window.event)" onchange="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbService&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtcbService&#39;,&#39;Change&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;);" onkeyup="this.onchange();">
+    <option value="__ossli_0">All</option>
+
+</select><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbService"></span></div ><div ><a id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnPrint" tabindex="62" class="printbutton" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnPrint&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$W_Utils_UI_wt43$block$wtbtnPrint&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" href="#"><span class="iconfont"></span><span class="printbuttontext">Print</span></a><a id="W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnExport" tabindex="63" class="printbutton" href="#"><span class="iconfont"></span><span class="printbuttontext">Export</span></a></div ></div ></div ><div  id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_Wrapper" class="TableRecords_Wrapper"><div  class="TableRecords_TopNavigation"><div  class="TableRecords_Actions"></div ><div  class="Counter_Message">1 record</div ></div ><table class="TableRecords" cellspacing="0" id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable" style="width: 100%">
+    <thead>
+        <tr>
+            <th class="TableRecords_Header"><div  align="right">Date<a id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt23_block_wtlnkSort" tabindex="64" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt23_block_wtlnkSort&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt23$block$wtlnkSort&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" href="#" style="display:none;">lnkSort</a><script type='text/javascript'>
+      RichWidgets_List_SortColumn('{PerformanceResult}.[Date]','W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt23_block_wtlnkSort','','MyPerformance_PerformanceResultsPRs', 'W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt23_block_wttxtTableRecordsId');
+ </script><input name="W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt23$block$wttxtTableRecordsId" type="text" size="50" id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt23_block_wttxtTableRecordsId" tabindex="65" style="display:none" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt23_block_wttxtTableRecordsId"></span></div ></th><th class="TableRecords_Header">Component<a id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt38_block_wtlnkSort" tabindex="66" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt38_block_wtlnkSort&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt38$block$wtlnkSort&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" href="#" style="display:none;">lnkSort</a><script type='text/javascript'>
+      RichWidgets_List_SortColumn('{Component}.[Name]','W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt38_block_wtlnkSort','','MyPerformance_PerformanceResultsPRs', 'W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt38_block_wttxtTableRecordsId');
+ </script><input name="W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt38$block$wttxtTableRecordsId" type="text" size="50" id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt38_block_wttxtTableRecordsId" tabindex="67" style="display:none" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt38_block_wttxtTableRecordsId"></span></th><th class="TableRecords_Header">Location<a id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt46_block_wtlnkSort" tabindex="68" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt46_block_wtlnkSort&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt46$block$wtlnkSort&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" href="#" style="display:none;">lnkSort</a><script type='text/javascript'>
+      RichWidgets_List_SortColumn('{Location}.[Name]','W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt46_block_wtlnkSort','','MyPerformance_PerformanceResultsPRs', 'W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt46_block_wttxtTableRecordsId');
+ </script><input name="W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt46$block$wttxtTableRecordsId" type="text" size="50" id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt46_block_wttxtTableRecordsId" tabindex="69" style="display:none" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt46_block_wttxtTableRecordsId"></span></th><th class="TableRecords_Header">Program<a id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt12_block_wtlnkSort" tabindex="70" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt12_block_wtlnkSort&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt12$block$wtlnkSort&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" href="#" style="display:none;">lnkSort</a><script type='text/javascript'>
+      RichWidgets_List_SortColumn('{Program}.[Name]','W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt12_block_wtlnkSort','','MyPerformance_PerformanceResultsPRs', 'W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt12_block_wttxtTableRecordsId');
+ </script><input name="W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt12$block$wttxtTableRecordsId" type="text" size="50" id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt12_block_wttxtTableRecordsId" tabindex="71" style="display:none" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt12_block_wttxtTableRecordsId"></span></th><th class="TableRecords_Header">Rep Scheme<a id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt37_block_wtlnkSort" tabindex="72" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt37_block_wtlnkSort&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt37$block$wtlnkSort&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" href="#" style="display:none;">lnkSort</a><script type='text/javascript'>
+      RichWidgets_List_SortColumn('{PerformanceResult}.[RepScheme]','W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt37_block_wtlnkSort','','MyPerformance_PerformanceResultsPRs', 'W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt37_block_wttxtTableRecordsId');
+ </script><input name="W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt37$block$wttxtTableRecordsId" type="text" size="50" id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt37_block_wttxtTableRecordsId" tabindex="73" style="display:none" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt37_block_wttxtTableRecordsId"></span></th><th class="TableRecords_Header"><div  align="right">REsult</div ></th><th class="TableRecords_Header"><div  align="left">PR</div ></th><th class="TableRecords_Header">Comment<a id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt15_block_wtlnkSort" tabindex="74" onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt15_block_wtlnkSort&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt15$block$wtlnkSort&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" href="#" style="display:none;">lnkSort</a><script type='text/javascript'>
+      RichWidgets_List_SortColumn('{PerformanceResult}.[Comment]','W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt15_block_wtlnkSort','','MyPerformance_PerformanceResultsPRs', 'W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt15_block_wttxtTableRecordsId');
+ </script><input name="W_Theme_UI_wt50$block$wtMainContent$wtPRSTable$ctl02$RichWidgets_wt15$block$wttxtTableRecordsId" type="text" size="50" id="W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt15_block_wttxtTableRecordsId" tabindex="75" style="display:none" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt15_block_wttxtTableRecordsId"></span></th>
+        </tr>
+    </thead><tbody>
+        <tr>
+            <td class="TableRecords_OddLine"><div  align="right">12/28/2015</div ></td><td class="TableRecords_OddLine">Back Squat</td><td class="TableRecords_OddLine">Big City CrossFit</td><td class="TableRecords_OddLine">CrossFit</td><td class="TableRecords_OddLine">5 - 3 - 1 - 2x1.</td><td class="TableRecords_OddLine"><div  align="right">1 x 1 @ 195 lbs</div ></td><td class="TableRecords_OddLine"><div  align="left">PR by 10 lbs vs. 185 on 07/13/2015</div ></td><td class="TableRecords_OddLine"><span title=""></span></td>
+        </tr>
+    </tbody>
+</table><div  class="TableRecords_BottomNavigation"><div  class="TableRecords_Footer"></div ><div  class="ListNavigation_Wrapper"></div ></div ></div ><div  id="W_Theme_UI_wt50_block_wtMainContent_wtHiddenButtonWrapper" class="hidden"><input onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtbtnDoResetTable&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtbtnDoResetTable&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" type="submit" name="W_Theme_UI_wt50$block$wtMainContent$wtbtnDoResetTable" value="Ok" id="W_Theme_UI_wt50_block_wtMainContent_wtbtnDoResetTable" tabindex="83" class="Button" /><input onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtbtnDoResetFiltersAndTable&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtbtnDoResetFiltersAndTable&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" type="submit" name="W_Theme_UI_wt50$block$wtMainContent$wtbtnDoResetFiltersAndTable" value="Ok" id="W_Theme_UI_wt50_block_wtMainContent_wtbtnDoResetFiltersAndTable" tabindex="84" class="Button" /><input onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtbtnDoResetTableAndChart&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtbtnDoResetTableAndChart&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" type="submit" name="W_Theme_UI_wt50$block$wtMainContent$wtbtnDoResetTableAndChart" value="Ok" id="W_Theme_UI_wt50_block_wtMainContent_wtbtnDoResetTableAndChart" tabindex="85" class="Button" /><input onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtbtnDoResetChart&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtbtnDoResetChart&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" type="submit" name="W_Theme_UI_wt50$block$wtMainContent$wtbtnDoResetChart" value="Ok" id="W_Theme_UI_wt50_block_wtMainContent_wtbtnDoResetChart" tabindex="86" class="Button" /><input onclick="OsAjax(arguments[0] || window.event,&#39;W_Theme_UI_wt50_block_wtMainContent_wtbtnDoPrintClick&#39;,&#39;W_Theme_UI_wt50$block$wtMainContent$wtbtnDoPrintClick&#39;,&#39;&#39;,&#39;__OSVSTATE,&#39;,&#39;&#39;); return false;" type="submit" name="W_Theme_UI_wt50$block$wtMainContent$wtbtnDoPrintClick" value="Ok" id="W_Theme_UI_wt50_block_wtMainContent_wtbtnDoPrintClick" tabindex="87" class="Button Is_Default" /><input type="submit" name="W_Theme_UI_wt50$block$wtMainContent$wtbtnDoExportClick" value="Ok" id="W_Theme_UI_wt50_block_wtMainContent_wtbtnDoExportClick" tabindex="88" class="Button" /></div ></div ></div ></div ><div  id="W_Theme_UI_wt50_block_wtFooter" class="Footer container clearfix" align="right" style="clear: both; z-index: -99999;"><div  class="Footer"><div  class="Paragraph noprint" align="left"><div  id="W_Theme_UI_wt50_block_wt8_RichWidgets_wt3_block_wtdivWait" class="Feedback_AjaxWait" style="display:none"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="height:16px;width:16px;" /> Loading...</div ><script type='text/javascript'>
+     RichWidgets_Feedback_AjaxWait_init('W_Theme_UI_wt50_block_wt8_RichWidgets_wt3_block_wtdivWait');
+ </script></div ></div ></div ><span id="W_Theme_UI_wt50_block_RichWidgets_wt25_block"><script type='text/javascript'>
+OsRegisterExceptionHandler(RichWidgets_Feedback_Message_ErrorHandler)
+</script><div  id="W_Theme_UI_wt50_block_RichWidgets_wt25_block_wtFeedback_Wrapper" class="Feedback_Message_Wrapper"><span id="W_Theme_UI_wt50_block_RichWidgets_wt25_block_wtnotify"><span class="NotifyWidget"></span><SCRIPT type="text/javascript">
+//<![CDATA[
+RichWidgets_Feedback_Message_notifyWidget ='W_Theme_UI_wt50_block_RichWidgets_wt25_block_wtnotify';
+//]]>
+</SCRIPT></span></div ></span><div ><script>
+$(window).load(function() {
+    /* Start of wodify Zendesk Widget script */
+    /*<![CDATA[*/
+    window.zEmbed || function(e, t) {
+        var n, o, d, i, s, a = [],
+            r = document.createElement("iframe");
+        window.zEmbed = function() {
+            a.push(arguments)
+        }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document;
+        try {
+            o = s
+        } catch (c) {
+            n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s
+        }
+        o.open()._l = function() {
+            var o = this.createElement("script");
+            n && (this.domain = n), o.id = "js-iframe-async", o.src = e, this.t = +new Date, this.zendeskHost = t, this.zEQueue = a, this.body.appendChild(o)
+        }, o.write('<body onload="document._l();">'), o.close()
+    }("https://assets.zendesk.com/embeddable_framework/main.js", "wodify.zendesk.com"); /*]]>*/
+    zE(function() {
+        zE.identify({
+          name: 'Chelsea Troy', // User’s real name
+          email: 'chelsea.dommert@gmail.com', // User’s email address
+          externalId: 507645, // Optional: Unique id of the user (if set, this should not change)
+          organization: 'Big City CrossFit' // Account name
+        });
+    });
+    /* End of wodify Zendesk Widget script */
+});
+</script><script>
+  // Intercom.io script
+  // Added 5-12-2015 by Brian Gall
+  // Updates 6-16-2015 by Ameet Shah
+
+  window.intercomSettings = {
+    //Current UserID    
+    user_id: "507645", 
+    // The current logged in user's full name
+    name: "Chelsea Troy",
+    //Make this shit secure
+    user_hash: "<%= wBTBHqmeY/GX3ouJYgvFcLo9kEjQlSrrOwbGfV312dw= %>",
+    // The current logged in user's email address.
+    email: "chelsea.dommert@gmail.com",
+    // The current logged in user's sign-up date as a Unix timestamp.
+    created_at: 1424853259,
+    // Highest Role
+    Role: "Athlete",
+    app_id: "i85uk4pn",
+
+    company: {
+        // TenantId
+        id: "780",
+        // TenantPublicName
+        name: "Big City CrossFit",
+        // TeanantCreatdOn
+        created_at: "1386169144",
+        // MonthlySpend
+        monthly_spend: "141.75",
+        // LifetimeSpend
+        LifeTime_Spend: "3535",
+        // Country
+        Country: "United States of America",
+        // Timezone
+        Time_Zone: "(GMT-06:00) Central Time (US & Canada)"
+    },
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==='function'){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/al557108';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script></div ><script type="application/javascript">var _prum={id:"51692257abe53d682f000000"};var PRUM_EPISODES=PRUM_EPISODES||{};PRUM_EPISODES.q=[];PRUM_EPISODES.mark=function(b,a){PRUM_EPISODES.q.push(["mark",b,a||new Date().getTime()])};PRUM_EPISODES.measure=function(b,a,b){PRUM_EPISODES.q.push(["measure",b,a,b||new Date().getTime()])};PRUM_EPISODES.done=function(a){PRUM_EPISODES.q.push(["done",a])};PRUM_EPISODES.mark("firstbyte");(function(){var b=document.getElementsByTagName("script")[0];var a=document.createElement("script");a.type="text/javascript";a.async=true;a.charset="UTF-8";a.src="//rum-static.pingdom.net/prum.min.js";b.parentNode.insertBefore(a,b)})();</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33369205-5', 'wodify.com');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+    
+<script type="text/javascript">
+//<![CDATA[
+var OsPage_ValidatorsOrder =  new Array("W_Theme_UI_wt50_block_wt6_wtApplications", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wttxtSearch", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbLocation", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPrograms2", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbDateRange", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbClass", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbResolution", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceType", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipType", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipPlan", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericStatus", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericStatus2", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPaymentPlan", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbComponentType", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbStatus", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbTransactionType", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbTrend", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbComponent", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceLessThan", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbMembershipType2", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPicklistValue", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbPayrollPayPeriodValue", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbClassReservationStatus", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbDiscount", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbUserValue", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbGenericKeyValue3", "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbService", "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt23_block_wttxtTableRecordsId", "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt38_block_wttxtTableRecordsId", "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt46_block_wttxtTableRecordsId", "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt12_block_wttxtTableRecordsId", "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt37_block_wttxtTableRecordsId", "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt15_block_wttxtTableRecordsId");
+var OsPage_Validators =  new Array({}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbFromDate", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt27_block_wtDateInput", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbToDate", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_RichWidgets_Override_wt61_block_wtDateInput", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtcbAttendanceLessThan", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt23_block_wttxtTableRecordsId", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt38_block_wttxtTableRecordsId", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt46_block_wttxtTableRecordsId", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt12_block_wttxtTableRecordsId", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt37_block_wttxtTableRecordsId", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"}, 
+{controltovalidate: "W_Theme_UI_wt50_block_wtMainContent_wtPRSTable_ctl02_RichWidgets_wt15_block_wttxtTableRecordsId", evaluationfunction: "OsCustomValidatorEvaluateIsValid", errormessage: "Text expected!", clientvalidationfunction: "OsCustomValidatorText"});
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var OsPage_ValidationActive = false;
+OsValidatorOnLoad();
+
+function OsValidatorOnSubmit() {
+  if (OsPage_ValidationActive) { return OsValidatorCommonOnSubmit(); }
+  return true;
+}
+// ]]>
+</script>
+</form><script type="text/javascript">outsystems.internal.$._waitForViewstate = true;outsystems.internal.$(document).ready(function() {outsystems.internal.$('input[name=__OSVSTATE]').val('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');outsystems.internal.$._waitForViewstate = false;});</script>
+<script type="text/javascript">//<![CDATA[
+if(!window.OsJSONUpdate){do{try {if(window.parent && window.parent.OsJSONUpdate)window.OsJSONUpdate = window.parent.OsJSONUpdate;}catch(ex){d = document.domain.indexOf('.')+1;document.domain = document.domain.substr(d, document.domain.length - d);}}while(!window.OsJSONUpdate && document.domain.indexOf('.')!=document.domain.lastIndexOf('.'));if (!window.OsJSONUpdate){try{document.domain = window.location.hostname;}catch(ex){}window.OsJSONUpdate = function() {};}}
+//]]></script><script type="text/javascript">//<![CDATA[
+OsJSONUpdate({"js":["outsystems.internal.$(document).ready(function() {OsJSONUpdate({\"js\":[\"$('#W_Theme_UI_wt50_block_wtMainContent_W_Utils_UI_wt43_block_wtbtnExport').click(function() {\\r\\n  $('#W_Theme_UI_wt50_block_wtMainContent_wtbtnDoExportClick').click();\\r\\n});\"]})});"]})//]]></script>
+  </body>
+</html>
